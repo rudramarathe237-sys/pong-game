@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    width: 100%;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.player-score, .computer-score {
+    flex: 1;
+}
+
+.player-score h2, .computer-score h2 {
+    color: #667eea;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.player-score p, .computer-score p {
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.vs {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+#pongCanvas {
+    background: #000;
+    border: 3px solid #667eea;
+    display: block;
+    margin: 0 auto 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    max-width: 100%;
+    height: auto;
+}
+
+.controls {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+}
+
+.controls p {
+    margin: 8px 0;
+    font-size: 0.95em;
+}
+
+.controls p:first-child {
+    font-weight: bold;
+    color: #667eea;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .scoreboard {
+        flex-direction: column;
+    }
+
+    .vs {
+        margin: 10px 0;
+    }
+
+    #pongCanvas {
+        width: 100%;
+        height: auto;
+    }
+
+    .controls {
+        font-size: 0.85em;
+    }
+}
